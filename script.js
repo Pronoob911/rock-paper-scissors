@@ -8,7 +8,7 @@ const rock_div=document.getElementById("r");
 const paper_div=document.getElementById("p");
 const sciccors_div=document.getElementById("s");
 
-function game(userChoice)
+const game = (userChoice) =>
 {	
 	const computerChoice=getComputerChoice();
 	switch(userChoice + computerChoice)
@@ -37,7 +37,7 @@ function game(userChoice)
 
 }
 
-function convertToWord(letter)
+const convertToWord = (letter) =>
 {
 	if(letter === "r") return "Rock";
 	if(letter === "p") return "Paper";
